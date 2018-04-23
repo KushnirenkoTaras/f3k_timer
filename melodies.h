@@ -8,8 +8,6 @@ struct note_t {
   int dur;    // Note duration
 };
 
-const int TEMP_TONE = 9;
-
 const note_t melImperMarch[] PROGMEM = {
   {NOTE_G4,  DUR_1_4},
   {NOTE_G4,  DUR_1_4},
@@ -43,7 +41,7 @@ const note_t melOyNaGori[] PROGMEM = {
   {NOTE_D5,  DUR_1_8},
   {NOTE_C5,  DUR_1_8},
 
-  {NOTE_AS4,  DUR_1_8},
+  {NOTE_AS4, DUR_1_8},
   {NOTE_C5,  DUR_1_8},
   {NOTE_D5,  DUR_1_4},
 

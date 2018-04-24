@@ -21,6 +21,14 @@
 | PIN A2 | Button List/Reset | |
 | PIN 07 | Buzzer + | |
 
+## Used libraries
+* <SPI>
+* <Adafruit_GFX>
+* "TFT_ST7735" Setting for display TFTLCD-SPI1.44 in the _setting directory
+* <VoltageReference.h>
+* <OneButton.h>
+* <EEPROM.h>
+
 ## Buttons function
 ### Start/Stop      
 * Click - Start/Stop timer

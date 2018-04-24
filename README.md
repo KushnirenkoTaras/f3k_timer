@@ -32,10 +32,11 @@
 
 ## Setup menu
 Enter to the Setup menu - on timer stop Long Press both buttons.
+
 In the menu list current line marked ">".
 
-Start/Stop - next menu line     
-List/Reset - previous menu line     
+* Start/Stop - next menu line     
+* List/Reset - previous menu line     
 
 Long press Start/Stop - enter edit line mode. In the edit mode line marked as "*".
 
@@ -56,14 +57,14 @@ Exit from edit mode - long press any button.
 * Start   - Select start beep tone. Default note C5 (523 Hz)
 * Stop    - Select stop beep tone. Default note C6 (1047 Hz)
 * 15 sec  - Select every 15 sec beep tone. Default note C7 (2093 Hz)
-Minute  - Select start every minutes beep tone. Default note C8 (4186 Hz)
+* Minute  - Select every minutes beep tone. Default note C8 (4186 Hz)
 
 ### Menu *Batt*
-* Off ";
-* Crit";
-* Warn";
+* Off     - Off signal voltage in sV. Default 300 (3.00 V)
+* Crit    - Critical voltage in sV. Default 350 (3.50 V)
+* Warn    - Warning voltage in sV. Default 380 (3.80 V)
 
 ### Menu *Time*
-* Corr
-* Start
-* Beep
+* Corr    - Timer correction. Default 0
+* Start   - Start/Stop beep duration in ms. Default 200 (0.2 sec)
+* Beep    - 15 sec/minutes beep duration in ms. Default 70 (0.07 sec). If 0 - 15 sec beep disabled/

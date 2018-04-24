@@ -1,3 +1,9 @@
+# TFT_ST7735
+src/TFT_ST7735.*
+src/font.*
+src/fonts/
+src/_settings/TFT_ST7735_registers.h
+
 # Prerequisites
 *.d
 

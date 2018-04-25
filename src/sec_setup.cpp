@@ -153,10 +153,10 @@ void dispSec() {// Show timer
 //  unsigned int min = deciSec / 600;
   unsigned int sec = deciSec % 600;
 //  unsigned int dSec = sec % 10;
-  sec /= 10;
+//  sec /= 10;
   char buf[10];
 //  sprintf(buf, "%02d:%02d.%1d", min, sec, dSec);
-  sprintf(buf, "%02d:%02d.%1d", deciSec / 600, sec, sec % 10);
+  sprintf(buf, "%02d:%02d.%1d", deciSec / 600, sec / 10, sec % 10);
   display.print(buf);
 }
 

@@ -1,4 +1,6 @@
 # f3k_timer
+The timer is designed for timing the flights on DLG gliders. Allows you to save up to 30 results in a list.
+
 ## Timer ciruit
 | Arduino NANO | TFT 1.8' |
 | --- | --- |
@@ -22,17 +24,17 @@
 | PIN 07 | Buzzer + | |
 
 ## Used libraries
-* <SPI>
-* <Adafruit_GFX>
-* "TFT_ST7735" Setting for display  [TFTLCD-SPI1.44](http://www.kosmodrom.com.ua/el.php?name=TFTLCD-SPI1.44) in the _setting directory
-* <VoltageReference.h>
-* <OneButton.h>
-* <EEPROM.h>
+* \<SPI\>
+* \<Adafruit_GFX\>
+* \"TFT_ST7735\" Setting for display  [TFTLCD-SPI1.44](http://www.kosmodrom.com.ua/el.php?name=TFTLCD-SPI1.44) in the _setting directory
+* \<VoltageReference.h\>
+* \<OneButton.h\>
+* \<EEPROM.h\>
 
 ## Buttons function
 ### Start/Stop      
 * Click - Start/Stop timer
-* Long Press - Only 
+* Long Press - Only on timer stop. Simultaneously with the List/Reset button, go to the **Setup** mode
 
 ### List/Reset - enable only if timer stop
 * Click - list results
@@ -76,3 +78,14 @@ Exit from edit mode - long press any button.
 * **Corr**    - Timer correction. Default 0
 * **Start**   - Start/Stop beep duration in ms. Default 200 (0.2 sec)
 * **Beep**    - 15 sec/minutes beep duration in ms. Default 70 (0.07 sec). If 0 - 15 sec beep disabled.
+
+##Timer correction
+Since the clock speed of the microcontroller may vary depending on the instance, the stopwatch may hurry or lag. To adjust this, use the **Corr** parameter of the *Time* menu.
+
+In this parameter, you must specify how long it takes for 1 minute in ms. The calculation procedure for this parameter is as follows:
+
+* Start the timer at the same time as the stopwatch. For example, sports
+* take a time of at least 10 minutes, preferably 30 minutes for more accurate calculation.
+* compare the time. For example, the timer went ahead 0.6 seconds in 30 minutes
+* 0.6 = 600 ms. 600/30 = 20. Enter the parameter **Corr** = 20.
+* If the timer is behind, set the **Corr** parameter to negative value

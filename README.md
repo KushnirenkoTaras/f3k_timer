@@ -79,7 +79,7 @@ Exit from edit mode - long press any button.
 * **Start**   - Start/Stop beep duration in ms. Default 200 (0.2 sec)
 * **Beep**    - 15 sec/minutes beep duration in ms. Default 70 (0.07 sec). If 0 - 15 sec beep disabled.
 
-##Timer correction
+## Timer correction
 Since the clock speed of the microcontroller may vary depending on the instance, the stopwatch may hurry or lag. To adjust this, use the **Corr** parameter of the *Time* menu.
 
 In this parameter, you must specify how long it takes for 1 minute in ms. The calculation procedure for this parameter is as follows:
